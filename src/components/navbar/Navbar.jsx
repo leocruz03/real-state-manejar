@@ -1,6 +1,9 @@
 /* hooks */
 import { useState } from 'react'
 
+/* react-router-dom */
+import { Routes, Link, Route } from 'react-router-dom'
+
 /* components */
 import LogInCard from './../cards/LogInCard';
 import LoginButton from './../buttons/LoginButton';
@@ -32,7 +35,9 @@ const Navbar = () => {
             <div className='grid grid-cols-2'>
                 {/* left */}
                 <section className='relative flex items-center my-auto' onClick={ handleClose }>
-                    <img src={ Manejar } alt='Manejar' className='w-[200px] cursor-pointer' />
+                    <Link to='/'>
+                        <img src={ Manejar } alt='Manejar' className='w-[200px] cursor-pointer' />
+                    </Link>
                 </section>
 
                 {/* right */}
@@ -48,9 +53,9 @@ const Navbar = () => {
             </div>
             <nav onClick={ handleClose } className='pt-4'>
                 <ul className='flex items-center justify-center space-x-12 md:space-x-20'>
-                    <li><a href='#' className='font-semibold text-gray-500 hover:text-blue-800' onClick={ handleClose }>Inmuebles</a></li>
-                    <li><a href='#' className='font-semibold text-gray-500 hover:text-blue-800' onClick={ handleClose }>Publicar</a></li>
-                    <li><a href='#' className='font-semibold text-gray-500 hover:text-blue-800' onClick={ handleClose }>Servicios</a></li>
+                    <li><Link to='#' className='font-semibold text-gray-500 hover:text-blue-800' onClick={ handleClose }>Inmuebles</Link></li>
+                    <li><Link to='/how-publication' className='font-semibold text-gray-500 hover:text-blue-800' onClick={ handleClose }>Publicar</Link></li>
+                    <li><Link to='#' className='font-semibold text-gray-500 hover:text-blue-800' onClick={ handleClose }>Servicios</Link></li>
                 </ul>
             </nav>
         </header>

@@ -1,10 +1,13 @@
+/* react-router-dom */
+import { Routes, Link, Route } from 'react-router-dom'
+
 const Footer = () => {
     return (
         <footer className='bg-blue-100'>
             <section className='grid grid-cols-1 gap-y-10 px-20 py-14 md:grid-cols-4'>
                 <div className='space-y-4 text-xs text-gray-800'>
                     <h5 className='font-bold'>NOSOTROS</h5>
-                    <p>Quiénes somos</p>
+                    <p><Link to='/'>Quiénes somos</Link></p>
                     <p>Misión</p>
                     <p>Visión</p>
                     <p>Trayectoria</p>
