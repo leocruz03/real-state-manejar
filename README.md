@@ -18,6 +18,7 @@ This design is 100% made by me, inspired by an Airbnb page
 
 - [React JS](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
+- [React Spinners](https://www.npmjs.com/package/react-spinners)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Hero Icons](https://heroicons.com/)
 - [Unsplash](https://unsplash.com/es)
